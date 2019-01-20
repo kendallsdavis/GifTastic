@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- css style sheet -->
+<link rel="stylesheet" href="assets/gifstyle.css">
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- link to javascript code -->
+<script src="assets/gifjs.js"></script>
+<!-- google fonts -->
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Patrick+Hand" rel="stylesheet">
+
+<title>GifTastic</title>
+</head>
+<body>
+
+    <!-- Page Header -->
+<div id = "header" class = row>
+        <div id = "blank1" class = col-md-3></div>
+        <div id = "title" class = col-md-6>Giftastic Gif Generator!</div>
+        <div id = "blank2" class = col-md-3></div>
+</div>
+
+<!-- Instructions -->
+<div id="instructions">Click any of the below buttons to generate fun gifs! You can add a gif button of your own by entering it in 
+    the "Add an animal" box!</div>
+  
+<!-- New Gif -->
+<div id="new-gif" class = row>
+        <div id = "blank1" class = col-md-4></div>
+        <div id = "input" class = col-md-4> Add a new animal!
+            <input type="text" id="new" name="new-gif">
+                <button type="button" class="btn btn-info" id="submit">Submit</button>
+                </button>
+        </div>
+        <div id = "blank2" class = col-md-4></div>      
+</div>
+
+<!-- Headers for containers -->
+<div id = "main-header" class = row>
+        <div id = "buttons-header" class = col-md-4>Available Gif Categories</div>
+        <div id = "gifs-header" class = col-md-8>Gifs Selected</div>
+</div>    
+
+<!-- Containers for buttons and Gifs -->
+<div id = "main" class = row>
+        <div id = "buttons" class = col-md-4>
+                <button type="button" class="btn btn-info" id="cats" value = "cats">Cats</button>
+                <button type="button" class="btn btn-info" id="goats" value = "goats">Goats</button>
+                <button type="button" class="btn btn-info" id="dogs" value = "dogs">Dogs</button>
+                <button type="button" class="btn btn-info" id="t-rex" value = "t-rex">T-Rex</button>
+                <button type="button" class="btn btn-info" id="squirrels" value = "squirrels">Squirrels</button>
+                <button type="button" class="btn btn-info" id="hamsters" value = "hamsters">Hamsters</button>
+        </div>
+        <div id = "gifs" class = col-md-8></div>
+</div>    
+
+</body>
+</html>
