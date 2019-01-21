@@ -3,27 +3,30 @@ $(document).ready(function(){
 console.log("hello");
 
 
-
+// ====================================================================================
 // Event listener for all button elements
- $("button").on("click", function() {
+ $(document).on("click", ".btn.btn-info",function() {
+
 
 // If the button clicked is to submit a new animal....
     if($(this).attr("id")==="submit"){
-        console.log($("#new").val());
+        // console.log($("#new").val());
         // Assign the user input to a new variable, "new_button_val"
         var new_button_val = $("#new").val().trim();
         // Add text, class, id, and value to the new button 
-        var new_button = $("<button>").text(new_button_val).addClass("btn btn-info").attr("id", new_button_val).attr("value", new_button_val);
+        var new_button = $("<button>").text(new_button_val).addClass("btn btn-info").attr("id", new_button_val).attr("value", new_button_val).attr("category","animal").attr("type","button");
         // Clear input field after user presses submit
         $('input[name=new-gif').val('');
         // Add a new button for the animal input by user
-        $("#buttons").append(new_button);    
+        $("#buttons").append(new_button);   
+     } else { 
+    
+        
+// ====================================================================================
 
-    } else {
+// function animalSearch() {
 
-// If the button clicked is one of the existing buttons...
-
-// var search = function (){
+     if($(this).attr("category")==="animal"){         
 
 // create a variable called "selection" and assign it to the value of the button clicked by the user
     var selection = $(this).attr("value");
@@ -82,16 +85,19 @@ console.log("hello");
 }
 
 
-// To close ".then" statement
+// To close "then" statement
  })
 
-//  To close search function
-    // }
-
-// To close else statement
+// //  To close search function
     }
 
+// To close else statement
+    
+
 // To close on click function
-    });
+  
 // To close document ready function
+     };
+    })
 });
+// ==========================================================================
